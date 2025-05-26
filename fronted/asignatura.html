@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Asignatura</title>
+
+  <link rel="stylesheet" href="Diseño.css">
+  <script src="Asignatura.js" defer></script>
+
+  
+</head>
+<body>
+  
+
+  <div class="menu">
+    <br> <br>
+    <h1>Asignatura</h1>
+    <br> <br>
+       
+      <h3>Consultar Asignatura</h3>
+      <div class="cuadro">
+        <input type="text" id="CodigoConsultar" placeholder="Codigo">
+      <br><br>
+        <input type="text" id="SemestreConsultar" placeholder="Semestre" >
+      <br><br>
+        <input type="text" id="SeccionConsultar" placeholder="Seccion">
+      <br><br>
+        <input  type="submit" onclick="mostrarText()" value="Mostrar">
+        <p id="tex"></p>
+      
+    <br> <br>
+
+      <h3>Modificar Asignatura</h3>
+        <input type="text" id="CodigoModificar" placeholder="Codigo">
+        <br><br>
+        <input type="text" id="SemestreModificar" placeholder="Semestre"  >
+        <br><br>
+        <input type="text" id="SeccionModificar" placeholder="Seccion">
+        <br><br>
+        <input  type="submit" onclick="mostrarText()" value="Mostrar">
+        <p id="tex2"></p>
+    <br> <br>
+
+      <h3>Registrar Asignatura</h3>
+        <input type="text" id="NombreRegistrar" placeholder="Nombre">
+      <br><br>
+        <input type="text" id="CodigoRegistrar" placeholder="Codigo">
+      <br><br>
+        <input type="text" id="SemestreRegistrar" placeholder="Semestre"  >
+      <br><br>
+        <input type="text" id="SeccionRegistrar" placeholder="Seccion">
+      <br><br>
+        <input type="text"id="CreditosRegistrar" placeholder="Creditos" >
+      <br><br>
+        <input  type="submit" onclick="mostrarText()" value="Mostrar">
+        <p id="tex3"></p>
+        
+  </div>
+
+  <div id="result"></div>
+</body>
+</html>

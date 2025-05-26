@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestion Estudiante</title>
+
+  <link rel="stylesheet" href="Diseño.css">
+  <script src="Funcionalidad.js" defer></script>
+
+  
+</head>
+<body>
+  <div class="menu">
+    <br> <br> 
+    <h1>Estudiante</h1>
+
+      <h3>Consultar Estudiante en Departamento</h3>
+      <div class="cuadro">
+          <input type="text" id="tipdocumentoEDepto" placeholder="Tipo de Doc" /><br>
+          <input type="text" id="numdocumentoEDepto" placeholder="Número de Doc" /><br>
+          <input  type="submit" onclick="consultarEstudianteDepto()" value="Consultar"><br>
+          <p id="consultarEDep"></p> 
+      </div>
+        <br><br>
+      <h3>Modificar en Departamento</h3>
+      <div class="cuadro">
+          <input type="text" id="tipdocumentod" placeholder="Tipo de Doc" /><br>
+          <input type="text" id="tipdocumentonv" placeholder="Tipo de Doc Nuevo" /><br>
+          <input  type="submit" onclick="modificarEstudianteDepto()" value="Modificar"> <br>
+          <p id="modificarEDep"></p>
+      </div>
+        <br><br>
+      <h3>Adicionar en Departamento</h3>
+      <div class="cuadro">
+          <input type="text" id="departamenton" placeholder="Nombre de Nuevo Departamento" /><br>
+          <input  type="submit" onclick="adicionarEstudianteDepto()" value="Adicionar"><br>
+          <p id="adicionarEDep"></p>
+      </div>
+        <br><br>
+      <h3>Adicionar en Asignatura</h3>
+      <div class="cuadro">
+          <input type="text" id="tipdocumentoa" placeholder="Tipo de Doc" /><br>
+          <input type="text" id="numdocumentoa" placeholder="Número de Doc" /><br>
+          <input type="text" id="semestre" placeholder="Semestre" /><br>
+          <input type="text" id="codigo" placeholder="Código" /><br>
+          <input type="text" id="seccion" placeholder="Sección" /><br>
+          <input  type="submit" onclick="adicionarAsignatura()" value="Adicionar">
+          <p id="adicionarAsig"></p>
+      </div>
+        <br><br>
+      <h3>Consultar Estudiante en Asignatura</h3>
+      <div class="cuadro">
+          <input type="text" id="tipdocumentoAsig" placeholder="Tipo de Doc" /><br>
+          <input type="text" id="numdocumentoAsig" placeholder="Número de Doc" /><br>
+          <input  type="submit" onclick="consultarEstudianteAsignatura()" value="Consultar"><br>
+          <p id="consultarEAsig"></p>
+      </div>
+        <br><br>
+  </div>
+  <div id="result"></div>
+</body>

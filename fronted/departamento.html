@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Departamento</title>
+
+  <link rel="stylesheet" href="Diseño.css">
+  <script src="Departamento.js" defer></script>
+
+</head>
+<body>
+  
+  <div class="menu">
+    <h1>Departamento</h1>
+    <br> <br>
+      <h3>Consultar Departamento</h3>
+      <div class="cuadro">
+        <h2 style="color: rgb(20, 108, 167);">Ingeniería</h2>
+        <input  type="submit" onclick="consultarDepartamento()" value="Consultar">
+        <p id="tex"></p>
+      </div>
+    <br> <br>
+      
+      <h3>Modificar Departamento</h3>
+      <div class="cuadro">
+      <input type="text" id="nuevoDepartamento" placeholder="Nuevo Nombre" >
+        <input  type="submit" onclick="modificarDepartamento()" value="Modificar">
+        <p id="tex2"></p>
+      </div>
+      <br> <br>
+      
+      <h3>Registrar Asignatura</h3>
+      <div class="cuadro">
+      <input type="text"   id="nombreAsignatura" placeholder="Nombre de la Asignatura">
+      <input  type="submit" onclick="registrarAsignatura()" value="Registrar">
+        <p id="tex3"></p>
+      </div>
+        <div id="result"></div>
+    
+  </div>
+  
+</body>
+</html>

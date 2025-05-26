@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>menu principal</title>
+  <link rel="stylesheet" href="frontend/Diseño.css">
+  <script src="Funcionalidad.js" defer></script>
+</head>
+
+<body>
+  <h1>Menú Principal</h1>
+
+  <div class="menu">
+    <h2>¿A donde quieres ir?</h2>
+    <div class="submenu">
+      <button onclick="asistencia()">Ir a Asistencia</button>
+      <button onclick="asignatura()">Ir a Asignatura</button>
+      <button onclick="estudiante()">Ir a Estudiante</button>
+      <button onclick="departamento()">Ir a Departamento</button>
+
+    </div>
+  </div>
+
+  <div id="result"></div>
+</body>
+</html>
